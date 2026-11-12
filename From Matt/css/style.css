@@ -1,0 +1,409 @@
+:root {
+  --cream: #fcf7e3;
+  --purple: #271626;
+  --sage: #b8c9a1;
+  --dark-green: #1f2a1b;
+  --tan: #c3a074;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--cream);
+  color: var(--purple);
+  font-family: "kit-sans", Arial, sans-serif;
+
+  line-height: 1.6;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 6%;
+  border-bottom: 2px solid var(--purple);
+}
+
+.logo {
+  color: var(--purple);
+  font-family: "bree-serif";
+  font-size: 2.3rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  gap: 1.25rem;
+}
+
+nav a {
+  color: var(--purple);
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.2s ease, border-bottom 0.2s ease;
+}
+
+nav a:hover {
+  color: var(--dark-green);
+}
+
+nav a.active {
+  color: var(--dark-green);
+  border-bottom: 3px solid var(--tan);
+}
+
+main {
+  width: 88%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+ .hero {
+  padding: 2rem 0 4rem;
+}
+
+.hero > img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+};
+
+@media (max-width: 700px) {
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 2rem 0;
+  }
+}
+
+.hero-text {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  line-height: 1.1;
+}
+
+.hero-text p {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+
+.section {
+  color: var(--dark-green);
+  font-size: 0.85rem;
+  font-weight: bold;
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+}
+
+h1,
+h2 {
+  color: var(--purple);
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 1.1;
+}
+
+h2 {
+  margin-top: 2.5rem;
+}
+
+p {
+  max-width: 700px;
+}
+
+h3{
+   margin-top: 2.5rem;
+}
+p{
+   line-height: 2;
+}
+
+.about-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  margin: 4rem 0;
+}
+
+.about-text p {
+  max-width: none;
+}
+
+.about-image {
+  margin: 0;
+}
+
+.about-image img {
+  display: block;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.about-image figcaption {
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 1.2rem;
+  border-radius: 4px;
+  background-color: var(--dark-green);
+  color: var(--cream);
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.button:hover {
+  background-color: var(--tan);
+  color: var(--purple);
+}
+
+.button:focus-visible,
+nav a:focus-visible {
+  outline: 3px solid var(--tan);
+  outline-offset: 4px;
+}
+
+figcaption {
+  color: var(--dark-green);
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+.site-footer {
+  width: 100%;
+  margin-top: 4rem;
+  padding: 3rem 6% 1rem;
+  background-color: var(--dark-green);
+  color: var(--cream);
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.8rem;
+}
+
+.site-footer h2 {
+  margin-top: 0;
+  color: var(--cream);
+  font-size: 1.4rem;
+}
+
+.footer-links a {
+  color: var(--cream);
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: var(--tan);
+  text-decoration: underline;
+}
+
+.footer-map {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  height: 180px;
+  border: 3px solid var(--cream);
+  border-radius: 8px;
+}
+
+.footer-bottom {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--sage);
+  text-align: center;
+}
+
+.footer-bottom p {
+  margin: 0;
+  color: var(--cream);
+  font-size: 0.8rem;
+}
+
+
+@media (max-width: 700px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-links {
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-map {
+    width: 100%;
+  }
+}
+  nav {
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 2rem 0;
+  }
+
+  h1 {
+    font-size: 2.3rem;
+  }
+
+Gallery 
+
+  .gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+  margin: 3rem 0;
+}
+
+.gallery-card {
+  min-width: 0;
+  margin: 0;
+}
+
+.gallery-card img {
+  display: block;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.gallery-card figcaption {
+  padding-top: 0.75rem;
+  color: var(--purple);
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-card img {
+    height: 280px;
+  }
+}
+
+
+Community 
+.chat-intro {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 3rem 0 1rem;
+  text-align: center;
+}
+
+.chat-intro p {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.chat-window {
+  max-width: 800px;
+  min-height: 420px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border: 2px solid var(--sage);
+  border-radius: 12px;
+  background-color: white;
+}
+
+.message {
+  width: 70%;
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 15px;
+}
+
+.message strong {
+  color: var(--dark-green);
+}
+
+.message p {
+  margin: 0.3rem 0;
+}
+
+.message span {
+  color: #666;
+  font-size: 0.75rem;
+}
+
+.received {
+  background-color: var(--sage);
+  border-bottom-left-radius: 3px;
+}
+
+.sent {
+  margin-left: auto;
+  background-color: var(--tan);
+  border-bottom-right-radius: 3px;
+}
+
+.chat-form-section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 0 4rem;
+  border-top: 1px solid var(--tan);
+}
+
+#chat-message {
+  display: block;
+  width: 100%;
+  min-height: 120px;
+  margin: 0.5rem 0 1rem;
+  padding: 1rem;
+  border: 2px solid var(--sage);
+  font: inherit;
+}
+
+#chat-status {
+  color: var(--dark-green);
+  font-weight: bold;
+}
+
+@media (max-width: 700px) {
+  .message {
+    width: 90%;
+  }
+
+  .chat-window {
+    padding: 1rem;
+  }
+}
