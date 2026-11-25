@@ -39,37 +39,88 @@
     <section class="gallery-grid">
 
       <figure class="gallery-card">
-        <img src="images/L1.jpeg" alt="Close-up of sourdough bread">
-        <figcaption>Image provided by Chris</figcaption>
+       <img
+  class="gallery-image"
+  src="images/L1.jpeg"
+  alt="Close-up of sourdough bread"
+  tabindex="0"
+  role="button">
+        <figcaption>Made this AMAZING whole wheat loaf! -Chris</figcaption>
       </figure>
 
       <figure class="gallery-card">
-        <img src="images/L2.jpeg" alt="Community member holding a sourdough loaf">
-        <figcaption>Image provided by Tom</figcaption>
+       <img
+  class="gallery-image"
+  src="images/L2.jpeg"
+  alt="Community member holding their sourdough loaf"
+  tabindex="0"
+  role="button">
+        <figcaption>Finally made a perfect loaf. -Susie</figcaption>
       </figure>
 
       <figure class="gallery-card">
-        <img src="images/L3.jpeg" alt="Sourdough loaf on a cutting board">
-        <figcaption>Image provided by Jenny</figcaption>
+       <img
+  class="gallery-image"
+  src="images/L3.jpeg"
+  alt="Sourdough loaf on a cutting board"
+  tabindex="0"
+  role="button">
+        <figcaption>Been a member for a year and it paid off! -Jenny</figcaption>
       </figure>
 
       <figure class="gallery-card">
-        <img src="images/L4.jpeg" alt="Sourdough loaf on a wooden board">
-        <figcaption>Image provided by Bryce</figcaption>
+       <img
+  class="gallery-image"
+  src="images/L4.jpeg"
+  alt="Sourdough loaf on a wooden board"
+  tabindex="0"
+  role="button">
+        <figcaption>Loved this rustic loaf I made thanks! -Bryce</figcaption>
       </figure>
 
       <figure class="gallery-card">
-        <img src="images/L5.jpg" alt="Sourdough loaf cooling">
-        <figcaption>Image provided by Susie</figcaption>
+       <img
+  class="gallery-image"
+  src="images/L5.jpg"
+  alt="Sourdough loaf cooling"
+  tabindex="0"
+  role="button">
+        <figcaption>Added choclate chips and it was so good! -Tom</figcaption>
       </figure>
 
       <figure class="gallery-card">
-        <img src="images/L6.jpg" alt="Finished homemade sourdough bread">
+       <img
+  class="gallery-image"
+  src="images/L6.jpg"
+  alt="Finished homemade sourdough bread"
+  tabindex="0"
+  role="button">
 
-        <figcaption>Image provided by Cassie</figcaption>
+        <figcaption>Trying out these cute scoring patterns was a success! -Cassie</figcaption>
       </figure>
 
     </section>
+
+    <div class="lightbox" id="lightbox" hidden>
+      <div
+        class="lightbox-content"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="lightbox-caption">
+
+       <button
+  class="lightbox-close"
+  id="lightbox-close"
+  type="button"
+  aria-label="Close enlarged image">
+  &times;
+</button>
+        <img id="lightbox-image" src="" alt="">
+
+        <p id="lightbox-caption"></p>
+      </div>
+    </div>
+
   </main>
 
   <footer class="site-footer">
