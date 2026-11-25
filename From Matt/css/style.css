@@ -402,6 +402,18 @@ figcaption {
   border-radius: 8px;
 }
 
+.map-figure {
+  margin: 0;
+}
+
+.map-figure figcaption {
+  margin-top: 0.75rem;
+  color: var(--cream);
+  font-size: 0.9rem;
+  font-style: italic;
+  text-align: center;
+}
+
 .footer-bottom {
   margin-top: 2rem;
   padding-top: 1rem;
